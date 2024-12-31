@@ -1,0 +1,76 @@
+<app-sidebar/>
+<div class="p-4 xl:ml-80">
+  <!--app-header-admin/-->
+  <div class="text-blue-gray-600">
+    <!--p>dashboard-admin works1!  Bienvenido {{user?.email}}</!--p-->
+    <!--p *ngFor="let user of dataUser"></!--p-->
+      <div class="container">
+        <h4 class="center-align">Centro de Monitoreo e informacion para la gestion de riesgos</h4>
+      </div>
+
+      <div class="mapaBody reborder">
+        <DIV class="containerMap cardPanel" *ngFor="let user of users">
+          <P><H3 class="center-align" >Bienvenido{{user.name}}</H3>
+        </DIV>
+      </div>
+      <div class="mapaBody reborder">
+        <div class="containerMap cardPanel">
+          <div class="grid degrade">
+
+            <!--p>
+                <h3-- class="center-align">Grafico</h3-->
+            <div class="container2">
+              <a [routerLink]="['/administradorA']" routerLinkActive="router-link-active" >
+                <button class="reborder reborder1">
+                <h5>sistema de Administracion de Datos</h5>
+                <br/>
+                <h6>  Base de datos de eventos adversos, afectaciones y daños. Los datos provienen de la evaluación de daños y análisis de necesidades. </h6>
+              </button>
+              </a>
+            </div>
+
+            <div class="container2">
+              <a [routerLink]="['/alertaA']">
+                <button class="reborder reborder1">
+                <h5>Sistema de alerta temprana departamental</h5>
+                <br/>
+                <h6> Vigilancia y monitoreo de amenazas probables frente a condiciones de vulnerabilidades existentes.                     </h6>
+              </button>
+              </a>
+            </div>
+            <div class="container2">
+              <a [routerLink]="['/conocimientoA']">
+                <button class="reborder reborder1">
+                <h5>Sistema de gestión del conocimiento</h5>
+                <br/>
+                <h6>Transferencia de conocimientos y experiencias para contribuir a la resiliencia e instaurar una cultura de prevención.</h6>
+                </button>
+              </a>
+            </div>
+            <div class="container2">
+              <a>
+                <button class="reborder reborder1">
+                <h5>Sistema de coordinación de respuesta</h5>
+                <h6> Articulación de acciones para las operaciones, logística e información para una respuesta coordinada ante eventos adversos.</h6>
+              </button>
+              </a>
+            </div>
+            <div class="container2">
+            <a routerLink="/auth/register" class="colorWhite">
+              <button>Ingrese un nuevo usuario</button>
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--div class="mapaBody reborder">
+        <div class="containerMap cardPanel">
+          <h4>Subir Archivos</h4>
+          <app-image-upload/>
+      </div>
+  </!--div-->
+  <br>
+  <br>
+  <!--app-footer-admin/-->
+</div>
+

@@ -1,0 +1,233 @@
+.container{margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;}
+  .center-align{text-align: center;}
+  .h4{font-size: 2.28rem;
+  line-height: 110%;
+  margin: 1.52rem 0 .912rem 0;}
+  .cardPanel{transition: box-shadow .25s;
+  padding: 24px;
+  margin: .5rem 0 1rem 0;
+  border-radius:2px ;
+  background-color:white;
+}
+.reborder{box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);}
+  .header{margin: .5rem 0 1rem 0;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;}
+  .call-header{
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  .call-item{padding-left: 72px; padding-top: 20px;
+  display: block;}
+  .title{font-size: 16px;}
+  .colorBlack{color: black;}
+  h5{color: black;}
+
+.mapaBody{
+  background: white;
+border-radius: 20px;
+display: flex;
+}
+.centro{
+  text-align: center;
+}
+
+.containerMap path{
+  fill: #0794A8;
+  stroke:white;
+  stroke-width: 2px;
+
+}
+.containerMap :hover{
+  fill: aqua;
+}
+.svg{align-items: center;
+margin-right: 20px;
+margin-left: 0px;}
+.btnExito{
+  color: #0794A8;
+  padding: 10px;
+}
+.notifications{
+  position: fixed;
+  top: 30px;
+  right: 20px;
+  z-index: 1000;
+}
+.toast{
+ position: relative;
+ margin-top: 100%;
+ padding: 10px;
+ color: #fff;
+ margin-bottom: 10px;
+ width: 400px;
+ display: grid;
+ grid-template-columns: 70px 1fr 70px;
+ border-radius: 5px;
+ --color: #0abf30;
+ background-image: linear-gradient(
+  to right,#0495A8,#22242f 30%);
+  animation: show 0.3s ease 1 forwards;
+}
+.toast i{
+  color: var(--color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+}
+.toast .title{
+  font-size: x-large;
+  font-weight: bold;
+
+}
+.toast span, .toast i:nth-child(3){
+  color: #fff;
+  opacity: 0.6;
+}
+@keyframes show{
+  0% {
+    transform: translateX(100%);
+}
+40%{
+  transform: translateX(-5%);
+}
+80%{
+  transform: translateX(0%);
+}
+100%{
+  transform: translateX(-10%);
+}
+}
+.toast::before{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color);
+  width: 100%;
+  height: 3px;
+  content: '' ;
+  box-shadow: 0 0 10px var(--color);
+  animation: timeOut 5s linear 1 forwards;
+}
+@keyframes timeOut{
+  to{
+    width: 0;
+  }
+}
+.bodyAlert
+{ margin: 0;
+min-height: 100hv;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: aqua;
+}
+.map{height: 98vh; width: 100hw;}
+.btn-blue{
+  background-color: #0495A8;
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  cursor: pointer;
+  border-radius: 5px;
+ align-items: center;
+ justify-content: center;
+}
+.containerButtons{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap:20px;
+  width: 300px;
+  margin: 0 auto;
+}
+.btn-blue:hover{
+  background-color:#00FFFF;
+  color: #386CB0;
+}
+.containerLink{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  padding: 0 20px;
+  border: none;
+}
+.textLink{
+  margin-right:80px ;
+  font-size: 16px;
+
+}
+
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --background-color: #f4f6f9;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+.link-container {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+.search-box {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+.link-list {
+  list-style-type: none;
+  padding: 0;
+}
+.link-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  border-bottom: 1px solid #f1f1f1;
+  transition: background-color 0.3s ease;
+}
+.link-item:hover {
+  background-color: #f9f9f9;
+}
+.link-title {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+.link-actions {
+  display: flex;
+  gap: 10px;
+}
+.btnA {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.btnA:hover {
+  background-color: #2980b9;
+}
+.add-link-btnA {
+  background-color: var(--secondary-color);
+  margin-top: 10px;
+}
+.add-link-btnA:hover {
+  background-color: #27ae60;
+}

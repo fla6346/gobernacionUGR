@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.org-chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.level {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+.employee {
+  border: 1px solid #333;
+  margin: 0 10px;
+  padding: 10px;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+.department-list {
+  margin-top: 20px;
+  display: grid;
+
+}
+
+.department {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: box-shadow 0.3s ease;
+}
+.department:hover {
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+.department h4 {
+  color: var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+.center-align
+{
+  text-align: center;
+}

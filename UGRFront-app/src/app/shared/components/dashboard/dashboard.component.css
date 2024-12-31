@@ -1,0 +1,11 @@
+.das {
+  background-image: linear-gradient(#3c69b1,#0097a7);
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}

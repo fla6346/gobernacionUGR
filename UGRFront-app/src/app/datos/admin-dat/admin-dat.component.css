@@ -1,0 +1,237 @@
+header {
+  padding: 10px;
+  background-image: linear-gradient(#3c69b1,#0097a7);
+  justify-content: space-between;
+  transform: translateZ(0);
+  transition: all .33s cubic-bezier(.685,.0473,.346,1);
+  justify-content: space-between;
+  display: flex;
+  border-radius: 20px;
+  text-align: right;
+margin-left: 350px;
+margin-top: 25px;
+z-index: 1;
+}
+
+
+.logo {
+  width: 190px;
+}
+.logo:hover {
+  cursor: pointer;
+}
+.desktop_menu {
+  margin-top: 20px;
+}
+.desktop_menu ul{
+  padding: 0;
+  margin: 0;
+}
+.desktop_menu ul li
+{
+  list-style-type: none;
+  color: white;
+  display: inline-block;
+  font-size: 18px;
+  margin-left: 26px;
+}
+.desktop_menu ul li:hover
+{
+  font-size: 19px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #4568B0;
+  transition: 0.4s ease-in-out;
+}
+.menu-icon{
+  display: none;
+}
+button{
+  background-color: #3c69b1;
+  border: white;
+}
+.btn-blue{
+  margin: 15px 3px;
+  font-size: 15px;
+  border-radius: 30px;
+  font-weight: 600;
+  color: white;
+}
+@media screen and (min-width:128px) and (max-width:900px){
+  .desktop_menu{
+    position: fixed;
+    transition: 0.4s ease-in-out;
+    right: -280px;
+    top: 70px;
+    background: #0097a7;
+    width: 280px;
+    height: 100%;
+
+  }
+  .desktop_menu ul li{
+    display: block;
+    text-align: left;
+    margin: 0;
+    padding: 10px 0 10px 26px;
+    border-bottom: 1px solid gray;
+  }
+  .menu-icon{
+    display: block;
+    color: white;
+    font-size: 40px;
+    padding-top: 10px;
+  }
+  .mobile_menu{
+    right: 0;
+    transition: 0.4s ease-in-out;
+  }
+
+}
+.colorWhite{
+  color: white;
+}
+@media(max-width:700px) and (min-width:200px){
+  .btn-1{font-size: 10px;}
+}
+.btn-1{
+  margin: 5px;
+}
+@media(max-width:700px) and (min-width:200px){
+  .btn-12
+  {
+    margin: 5px;
+    height: 10px;
+
+  }
+  .tam1{
+    font-size: 10px;
+  }
+
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+}
+
+@media(max-width:800px) and (min-width:200px){
+  header
+  {
+    height: 80px;
+    width: 100%;
+    text-align: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 25px;
+    z-index: 1;
+    padding: 0;
+    padding-left: 15px;
+  }
+  .btn-1{font-size: 10px;
+  }
+  .btn-12
+  {
+    margin: 5px;
+    height: 10px;
+
+  }
+  .tam1{
+    font-size: 12px;
+  }
+
+
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+}
+
+.btn-1{
+  margin: 5px;
+}
+.div2{
+grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.call-item{
+  min-height: 0px;
+}
+.collection{
+  background-color: white;
+  border-bottom: 1px solid;
+  padding: 10px 20px;
+}
+table{
+  border-collapse: collapse;
+  width: 100%;
+}
+th, td{
+  font-size: 20px;
+  text-align: center;
+  border: 1px solid #dddddd;
+padding: 8px;
+}
+tr:nth-child(even){
+  background-color: #dddddd;
+}
+.cardPanel2{
+  background-color: white;
+  border-color: #3c69b1;
+  border-radius: 20px;
+  height: 500px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 5px;
+}
+@media(max-width:700px) and (min-width:200px){
+  table{
+    width: 80%;
+  }
+  th,td{font-size: 15px;}
+  }
+  .btnCenter{
+    height: 25px;
+  width: 70px;
+  font-size: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.panel-body{
+  overflow: auto;
+}
+.container{margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;}
+  .center-align{text-align: center;}
+  .h4{font-size: 2.28rem;
+  line-height: 110%;
+  margin: 1.52rem 0 .912rem 0;}
+  .cardPanel{transition: box-shadow .25s;
+  padding: 24px;
+  margin: .5rem 0 1rem 0;
+  border-radius:2px ;
+  background-color:white;
+}
+.reborder{box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);}
+  .header{margin: .5rem 0 1rem 0;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;}
+  .call-header{
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  .call-item{padding-left: 72px; padding-top: 20px;
+  display: block;}
+  .title{font-size: 16px;}
+  .colorBlack{color: black;}
+  h5{color: black;}
+  .btn-blue{
+    background-color: #0495A8;
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    cursor: pointer;
+    border-radius: 5px;
+   align-items: center;
+   justify-content: center;
+  }

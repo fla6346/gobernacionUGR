@@ -1,0 +1,21 @@
+<p>image-upload works!</p>
+<!--div>
+<form (ngSubmit)="onSubmit()" enctype="multipart/form-data">
+  <input type="file" (change)="onFileSelected($event)"/>
+</form>
+<div *ngIf="imageUrl">
+  <h3>Vista Previa</h3>
+  <img [src]="imageUrl" alt="Imagen Cargada" style="max-width: 300px; max-height: 300px;">
+
+</div>
+<button type="submit" (click)="onSubmit()" class="text-blue-gray-600">upload</button>
+</!--div-->
+<div>
+  <input type="file" (change)="onFileSelected($event)" />
+  <button (click)="onSubmit()">Subir Imagen</button>
+</div>
+
+<div *ngIf="imageUrl">
+  <h3>Vista previa de la imagen:</h3>
+  <img [src]="imageUrl" alt="Imagen seleccionada" />
+</div>

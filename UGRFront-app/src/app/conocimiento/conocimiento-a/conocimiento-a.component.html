@@ -1,0 +1,82 @@
+<p>conocimiento-a works!</p>
+<style>
+  .container{margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;}
+  .center-align{text-align: center;}
+  .h4{font-size: 2.28rem;
+  line-height: 110%;
+  margin: 1.52rem 0 .912rem 0;}
+  .cardPanel{transition: box-shadow .25s;
+  padding: 24px;
+  margin: .5rem 0 1rem 0;
+  border-radius:2px ;
+  background-color:white;
+}
+.reborder{box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);}
+  .header{margin: .5rem 0 1rem 0;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;}
+  .call-header{
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  .call-item{padding-left: 72px; padding-top: 20px;
+  display: block;}
+  .title{font-size: 16px;}
+  .colorBlack{color: black;}
+  h5{color: black;}
+</style>
+<app-sidebar/>
+  <div class="p-4 xl:ml-80">
+    <app-header-admin/>
+    <div class="text-blue-gray-600">
+    </div>
+
+    <br>
+      <div class="container">
+        <h4 class="center-align">Centro de Conocimiento de la UNIDAD DE GESTION DE RIESGOS</h4>
+      </div>
+         <fieldset>
+          <div class="cardPanel reborder">
+            <h5 class="center-align"> Sistema del conocimiento Departamental</h5>
+            <div class="header">
+
+
+                <div>
+                  <h4>Subir PDF</h4>
+                  <input type="file"name="fileName"  (change)="onFileSelected($event)" accept="application/pdf" />
+                  <button (click)="onSubmit()" class="btn btn-blue">Subir PDF</button>
+                  <button (click)="onCancel()"class="btn btn-blue">Cancelar</button>
+
+                  <div *ngIf="pdfSrc">
+                    <h2>PDF Previsualización:</h2>
+                    <iframe [src]="pdfSrc" width="600" height="400"></iframe>
+                  </div>
+                </div>
+
+            </div>
+
+          <div *ngIf="pdfFiles.length > 0; else noFiles">
+            <h4>Archivos PDF</h4>
+            <ul>
+              <li *ngFor="let file of pdfFiles">
+                <a [href]="file.url" target="_blank">
+                  <iframe [src]="getSafeUrl(file.url)"
+                  width="50%"
+                  height="400px"
+                  frameborder="0"></iframe>
+                </a>
+                <button class="btn btn-blue" (click)="eliminar(file.id)">eliminar</button>
+              </li>
+            </ul>
+          </div>
+          <ng-template #noFiles>
+            <p>No se encontraron archivos PDF.</p>
+          </ng-template>
+          </div>
+         </fieldset>
+
+  </div>

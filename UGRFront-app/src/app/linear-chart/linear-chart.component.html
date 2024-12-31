@@ -1,0 +1,8 @@
+<p>Linear Chart Component</p>
+
+<div *ngIf="isLoading">Loading events...</div>
+<div *ngIf="events.length === 0 && !isLoading">No events available to display.</div>
+
+<div *ngIf="events.length > 0">
+  <canvas #chartCanvas></canvas>
+</div>
